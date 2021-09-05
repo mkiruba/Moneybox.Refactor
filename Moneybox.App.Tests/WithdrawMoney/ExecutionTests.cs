@@ -34,8 +34,8 @@ namespace Moneybox.App.Tests.WithdrawMoney
         }
         
         [Theory]
-        [InlineData(500, 1000, 100)]
-        public void Should_TransferMoney_Success_With_FundsLow_Notification(decimal fromBalance, decimal toBalance, decimal amount)
+        [InlineData(500, 100)]
+        public void Should_TransferMoney_Success_With_FundsLow_Notification(decimal fromBalance, decimal amount)
         {
             //Arrange
             var mockAccountRepository = new Mock<IAccountRepository>();
@@ -57,8 +57,8 @@ namespace Moneybox.App.Tests.WithdrawMoney
         }
         
         [Theory]
-        [InlineData(100, 1000, 500)]
-        public void Should_Fail_TransferMoney_When_InsufficientFund(decimal fromBalance, decimal toBalance, decimal amount)
+        [InlineData(100, 500)]
+        public void Should_Fail_TransferMoney_When_InsufficientFund(decimal fromBalance, decimal amount)
         {
             //Arrange
             var mockAccountRepository = new Mock<IAccountRepository>();
