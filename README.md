@@ -24,3 +24,13 @@ As part of this process however, you should look to refactor some of the code in
 Once you have completed test, zip up your solution, excluding any build artifacts to reduce the size, and email it back to our recruitment team.
 
 Good luck!
+
+___
+
+## Approach Followed
+
+1. Extracted WithDrawMoney code from TransferMoney.
+2. Completed Unit tests with 100% coverage for Features before starting to Refactor.
+3. Moved validations in to Domain model.
+4. Moved WithDraw and PayIn methods to Domain model.
+5. TransferMoney is refactored in to two steps as WithDraw and PayIn.
