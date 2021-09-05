@@ -204,3 +204,4 @@ FakesAssemblies/
 
 # Generated typescript files
 *.ts
+/.idea/.idea.Moneybox.Refactor/.idea
